@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phòng Giáo Vụ"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:padding="10dp"
+            android:background="@color/main"/>
+    </RelativeLayout>
+    <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        tools:ignore="Deprecated"
+        android:translationZ="-1dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ptithcm"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal" />
+    </AbsoluteLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xin chào Admin"
+        android:textColor="@color/main"
+        android:gravity="start"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="@drawable/borderradius"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/borderradius">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp">
+            <Button
+                android:id="@+id/btnTaikhoansv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:text="Tài khoản sv"
+                android:textColor="@color/main"
+                android:drawableTop="@drawable/ic_sinhvien"
+                android:backgroundTint="@color/white"/>
+            <Button
+                android:id="@+id/btnMonhoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:text="môn học"
+                android:textColor="@color/main"
+                android:drawableTop="@drawable/ic_monhoc"
+                android:backgroundTint="@color/white"/>
+            <Button
+                android:id="@+id/btnLoptinchi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:text="Lớp tín chỉ"
+                android:textColor="@color/main"
+                android:drawableTop="@drawable/ic_loptinchi"
+                android:backgroundTint="@color/white"/>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
